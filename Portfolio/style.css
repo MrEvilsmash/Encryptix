@@ -259,6 +259,26 @@ span{
     color: black;
     box-shadow: 0 0 25px #00ff51;
 }
+.vtn{
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background-color: black;
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    color: #00ff51;
+    letter-spacing: 0.3rem;
+    font-weight: 600;
+    border: 2px solid #00ff51;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.vtn:hover{
+    transform: scale3d(1.03);
+    background-color: #00ff51;
+    color: black;
+    box-shadow: 0 0 25px #00ff51;
+
+}
 .rtn{
     display: inline-block;
     padding: 1rem 2.8rem;
@@ -484,5 +504,317 @@ span{
         display: block; 
         text-align: center; 
         padding: 1rem 2rem; 
+    }
+}
+.contact {
+    padding: 20px;
+}
+
+.contact h1 {
+    margin-top: 60px;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact-info p {
+    margin: 10px 0;
+}
+
+.contact-info i {
+    margin-right: 10px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form form {
+    background: #222;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #00ff51;
+    border-radius: 4px;
+    background: #333;
+    color: #00ff51;
+}
+
+.contact-form button {
+    background: #00ff51;
+    color: black;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact-form button:hover {
+    background: #00cc40;
+}
+
+
+.skills {
+    padding: 20px;
+    text-align: center;
+}
+
+.skills h1 {
+    margin-top: 60px;
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.skills{
+    
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.skills p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.skill-item {
+    background: #222;
+    padding: 20px;
+    border-radius: 8px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.skill-item h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.skill-item p {
+    font-size: 16px;
+    margin: 0;
+}
+
+
+@media (max-width: 768px) {
+    .skills-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill-item {
+        width: 80%;
+        max-width: 400px;
+    }
+}
+
+
+
+/* Education Section Styles */
+.education {
+    padding: 20px;
+    text-align: center;
+}
+
+.education h1 {
+    
+    margin-top: 80px;
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.education p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.education-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.education-item {
+    background: #222;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.education-item h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.education-item p {
+    font-size: 16px;
+    margin: 0;
+}
+
+.education-item .date {
+    font-style: italic;
+    color: #00ff51;
+}
+@media (max-width: 768px) {
+    .education-item {
+        width: 90%;
+        max-width: none;
+    }
+}
+
+
+/* Experience Section Styles */
+.experience {
+    padding: 20px;
+    text-align: center;
+}
+
+.experience h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    
+    margin-top: 80px;
+    text-align: center;
+}
+
+.experience p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.experience-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.experience-item {
+    background: #222;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.experience-item h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.experience-item p {
+    font-size: 16px;
+    margin: 0;
+}
+
+.experience-item .date {
+    font-style: italic;
+    color: #00ff51;
+}
+
+.experience-item .position {
+    font-weight: bold;
+    color: #00ff51;
+}
+
+@media (max-width: 768px) {
+    .experience-item {
+        width: 90%;
+        max-width: none;
+    }
+}
+
+
+/* Services Section Styles */
+.services {
+    padding: 20px;
+    font-size: 36px;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.services h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.services p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.services-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service-item {
+    background: #222;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.service-item h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    font-size: 16px;
+    margin: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .services-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-item {
+        width: 90%;
+        max-width: 600px;
     }
 }
